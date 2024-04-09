@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anar's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<!-- Custom cursor -->
+<div id="custom-cursor"></div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a class="button" id="home-button" data-target="home-container">I am</a>
+    <a class="button" id="about-button" data-target="about-container">About</a>
+    <a class="button" id="exp-button" data-target="exp-container">Experience</a>
+    <a class="button" id="projects-button" data-target="projects-container">Projects</a>
+    <a class="button" id="contact-button" data-target="contact-container">Contact</a>
+</div>
+
+<body>
+
+    <!-- Home container -->
+    <div class="container" id="home-container">
+        <div class="text-box" id="home-text-box">
+            <h1>Anar Otgonbaatar</h1>
+            <h3>Software Developer and 3D Artist</h3>
+            <p>Building functional and visually engaging digital experiences.</p>
+        </div>
+        <div class="portrait-container">
+            <img src="images/portrait.jpg" alt="Portrait Background" class="portrait portrait-bg">
+            <img src="images/portrait-fg.png" alt="Portrait Foreground" class="portrait portrait-fg">
+        </div>
+    </div>
+
+    <!-- About container -->
+    <div class="container" id="about-container">
+        <h2>About Me</h2>
+        <div class="text-box" id="about-text-box">
+            <p>Hello! I'm Anar Otgonbaatar, a Computer Science senior at California State University, Fullerton, with a passion that lies at the intersection of creativity, technology, and engineering. My journey into this fascinating world started in childhood, with a penchant for disassembling electronics to unravel the mysteries behind their screens and circuits. Inspired by my tech-savvy older cousin, I delved into the realm of computers, eager to understand and master their capabilities.</p>
+            <p>This curiosity blossomed into a lifelong hobby of creating and innovating—whether it be crafting intricate designs from cardboard or bringing ideas to life through 3D printing. My decision to pursue computer science was driven by this love for creation and the realization that software development is an art form that allows for building impactful and innovative solutions.</p>
+            <p>At the heart of my academic and personal projects is the belief that technology is a tool for transformation and creativity. As I navigate through the final year of my degree and beyond, I'm excited to explore opportunities that allow me to merge my technical skills with my passion for making, aiming to contribute to projects that push the boundaries of what's possible.</p>
+        </div>
+    </div>
+
+    <!-- Experience container -->
+    <div class="container" id="exp-container">
+        <h2>Experience</h2>
+        <div class="text-box" id="contractor-text-box">
+            <h3>Contractor Assistant, EZ Construction</h3>
+            <h4>August 2017 - Present, Fullerton, CA</h4>
+            <ul>
+                <li>Performed a variety of construction tasks, prioritizing safety and efficiency.</li>
+                <li>Improved project completion speed by 50% through operational optimizations.</li>
+                <li>Managed materials handling, contributing to a 25% increase in project profitability.</li>
+            </ul>
+        </div>
+        <div class="text-box" id="vgdc-text-box">
+            <h3>Team Leader, Video Game Development Club at CSUF</h3>
+            <h4>August 2021 - December 2021, Fullerton, CA</h4>
+            <ul>
+                <li>Led the development of video games "Grab'n'Go" and "Hungmen."</li>
+                <li>showcasing strong leadership and technical skills in Unreal Engine, Blender 3D, and C++.</li>
+            </ul>
+        </div>
+        <div class="text-box" id="robotics-text-box">
+            <h3>Designer, driver, and programmer at Fairfax High School Robotics Club</h3>
+            <h4>August 2019 - March 2020, Los Angeles, CA</h4>
+            <ul>
+                <li>Participated in multiple FIRST Robotics competitions</li>
+                <li>Used CAD to design and build the robot</li>
+                <li>Drove the robot in competitions.</li>
+            </ul>
+        </div>
+        <div class="text-box" id="retail-text-box">
+            <h3>Retail Associate, Farm Boy at The Grove</h3>
+            <h4>June 2018 - August 2018, Los Angeles, CA</h4>
+            <ul>
+                <li>Engaged in various retail operations, providing exceptional customer service and support.</li>
+            </ul>
+        </div>
+        <div class="text-box" id="volunteer-text-box">
+            <h3>Volunteer Staff, Los Angeles Public Library Fairfax Branch</h3>
+            <h4>June 2017 - April 2018, Los Angeles, CA</h4>
+            <ul>
+                <li>Contributed to the library's operations and community service efforts, enhancing visitor experience.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects container -->
+    <div class="container" id="projects-container">
+        <h2>Projects</h2>
+        <!-- Grab'n'Go -->
+        <div id="grabngo-project-card" class="project-card">
+            <img src="images/grabngo-cover.jpg" alt="Grab'n'Go cover image" class="image-cover">
+            <div class="project-details">
+                <a href="https://anarotgo.itch.io/grab-n-go" target="_blank" rel="noopener" class="project-title">Grab'n'Go ></a>
+                <p>is a shopping simulator game set in a time during the pandemic.</p>
+                <div class="project-tech-container">
+                    <span class="tech-bubble">Unreal Engine</span>
+                    <span class="tech-bubble">UE Blueprints</span>
+                    <span class="tech-bubble">Blender 3D</span>
+                </div>
+            </div>
+        </div>
+        <!-- Hungmen -->
+        <div id="hungmen-project-card" class="project-card">
+            <img src="images/hungmen-cover.jpg" alt="HUNGMEN cover image" class="image-cover">
+            <div class="project-details">
+                <a href="https://anarotgo.itch.io/hungmen" target="_blank" rel="noopener" class="project-title">HUNGMEN ></a>
+                <p>Probably the fanciest hangman game ever. Set in the old west, you have to guess a random word letter by letter and at least one man must survive from the hangings.</p>
+                <div class="project-tech-container">
+                    <span class="tech-bubble">Unreal Engine</span>
+                    <span class="tech-bubble">UE Blueprints</span>
+                    <span class="tech-bubble">Blender 3D</span>
+                </div>
+            </div>
+        </div>
+        <!-- Unsatisfying Loop -->
+        <div id="ul1-project-card" class="project-card">
+            <video class="image-cover"  loop muted playsinline>
+                <source src="images/ul-cover.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="project-details">
+                <a href="https://www.reddit.com/r/blender/comments/nx7v7w/unsatisfying_loop_might_induce_rage/" target="_blank" rel="noopener" class="project-title">Unsatisfying Loop ></a>
+                <p>Unsatisfying loop. Might induce rage.</p>
+                <span>13K Upvotes | Top 50th post of all time in r/blender</span>
+                <div class="project-tech-container art-tech-container">
+                    <span class="tech-bubble">Blender 3D</span>
+                    <span class="tech-bubble">3D Modeling</span>
+                    <span class="tech-bubble">3D Animation</span>
+                </div>
+            </div>
+        </div>
+        <!-- Unsatisfying Loop 2 -->
+        <div id="ul2-project-card" class="project-card">
+            <video class="image-cover"  loop muted playsinline>
+                <source src="images/ul2-cover.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="project-details">
+                <a href="https://www.reddit.com/r/blender/comments/nxvjfr/screwdriver_malfunction_unsatisfying_loop_2_might/" target="_blank" rel="noopener" class="project-title">Unsatisfying Loop ></a>
+                <p>Unsatisfying loop 2: Screwdriver malfunction. Might induce rage.</p>
+                <span>6.8K Upvotes</span>
+                <div class="project-tech-container art-tech-container">
+                    <span class="tech-bubble">Blender 3D</span>
+                    <span class="tech-bubble">3D Modeling</span>
+                    <span class="tech-bubble">3D Animation</span>
+                </div>
+            </div>
+        </div>
+        <!-- Unsatisfying Loop 3 -->
+        <div id="ul3-project-card" class="project-card">
+            <video class="image-cover"  loop muted playsinline>
+                <source src="images/ul3-cover.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="project-details">
+                <a href="https://www.reddit.com/r/blender/comments/nynojn/plucker_been_getting_a_lot_of_hate_for_the/" target="_blank" rel="noopener" class="project-title">Unsatisfying Loop ></a>
+                <p>Unsatisfying loop 3: Plucker. Might induce rage.</p>
+                <span>3.2K Upvotes</span>
+                <div class="project-tech-container art-tech-container">
+                    <span class="tech-bubble">Blender 3D</span>
+                    <span class="tech-bubble">3D Modeling</span>
+                    <span class="tech-bubble">3D Animation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact container -->
+    <div class="container" id="contact-container">
+        <h2>Contact Me</h2>
+        <div class="logo-container">
+            <!-- GitHub -->
+            <a href="https://github.com/anarotgonbaatar" target="_blank" rel="noopener" title="github link">
+                <svg class="logo github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="var(--first)">
+                    <path d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"></path>
+                </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/anar-otgonbaatar/" target="_blank" rel="noopener" title="linkedin link">
+                <svg class="logo linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="var(--first)">
+                    <path d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z"/>
+                </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/haneul.anar/" target="_blank" rel="noopener" title="instagram link">
+                <svg class="logo instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--first)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.46471 1.0662C8.63794 1.01266 9.01258 1 12 1C14.9874 1 15.362 1.01266 16.5352 1.0662C17.7061 1.1196 18.5057 1.30556 19.2054 1.57751C19.9288 1.85858 20.5422 2.2347 21.1537 2.84623C21.7653 3.45779 22.1414 4.07123 22.4225 4.79454C22.6944 5.49426 22.8804 6.29385 22.9338 7.46471C22.9873 8.63798 23 9.01258 23 12C23 14.9874 22.9873 15.362 22.9338 16.5353C22.8804 17.7061 22.6944 18.5057 22.4225 19.2054C22.1414 19.9288 21.7653 20.5422 21.1537 21.1537C20.5422 21.7653 19.9288 22.1414 19.2054 22.4225C18.5057 22.6944 17.7061 22.8804 16.5352 22.9338C15.362 22.9873 14.9874 23 12 23C9.01258 23 8.63794 22.9873 7.46471 22.9338C6.29385 22.8804 5.49426 22.6944 4.79454 22.4225C4.07123 22.1414 3.45775 21.7653 2.84623 21.1537C2.23466 20.5422 1.85858 19.9287 1.57746 19.2054C1.30552 18.5057 1.1196 17.7061 1.06615 16.5353C1.01262 15.362 1 14.9874 1 12C1 9.01254 1.01262 8.63798 1.06615 7.46471C1.1196 6.29385 1.30552 5.49426 1.57746 4.79454C1.85858 4.07123 2.23466 3.45779 2.84623 2.84623C3.45775 2.2347 4.07123 1.85858 4.79454 1.57751C5.49426 1.30556 6.29385 1.1196 7.46471 1.0662ZM16.4449 3.04608C15.285 2.99316 14.9371 2.98198 12 2.98198C9.06284 2.98198 8.71496 2.99316 7.55501 3.04608C6.48257 3.09503 5.90008 3.27423 5.51247 3.42487C4.99906 3.62442 4.63259 3.86278 4.24768 4.24773C3.86278 4.63263 3.62437 4.99906 3.42482 5.51252C3.27423 5.90013 3.09503 6.48257 3.04608 7.55506C2.99316 8.71496 2.98198 9.06288 2.98198 12C2.98198 14.9371 2.99316 15.285 3.04608 16.4449C3.09503 17.5174 3.27423 18.0999 3.42482 18.4875C3.62437 19.0009 3.86278 19.3674 4.24768 19.7523C4.63259 20.1372 4.99906 20.3756 5.51247 20.5751C5.90008 20.7257 6.48257 20.905 7.55506 20.9539C8.71479 21.0068 9.06262 21.018 12 21.018C14.9373 21.018 15.2852 21.0068 16.4449 20.9539C17.5174 20.905 18.0998 20.7257 18.4874 20.5751C19.0009 20.3756 19.3674 20.1372 19.7523 19.7523C20.1372 19.3674 20.3755 19.0009 20.5751 18.4875C20.7257 18.0999 20.9049 17.5174 20.9539 16.4449C21.0068 15.285 21.018 14.9371 21.018 12C21.018 9.06288 21.0068 8.71496 20.9539 7.55506C20.9049 6.48257 20.7257 5.90013 20.5751 5.51252C20.3755 4.99906 20.1372 4.63263 19.7523 4.24768C19.3674 3.86278 19.0009 3.62442 18.4874 3.42487C18.0998 3.27423 17.5174 3.09503 16.4449 3.04608ZM8.33329 12C8.33329 14.025 9.97495 15.6667 12 15.6667C14.025 15.6667 15.6667 14.025 15.6667 12C15.6667 9.97495 14.025 8.33333 12 8.33333C9.97495 8.33333 8.33329 9.97495 8.33329 12ZM6.35131 12C6.35131 8.88032 8.88032 6.35136 12 6.35136C15.1196 6.35136 17.6486 8.88032 17.6486 12C17.6486 15.1197 15.1196 17.6486 12 17.6486C8.88032 17.6486 6.35131 15.1197 6.35131 12ZM17.8718 7.44816C18.6008 7.44816 19.1918 6.8572 19.1918 6.12818C19.1918 5.39915 18.6008 4.8082 17.8718 4.8082C17.1428 4.8082 16.5518 5.39915 16.5518 6.12818C16.5518 6.8572 17.1428 7.44816 17.8718 7.44816Z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.46471 1.0662C8.63794 1.01266 9.01258 1 12 1C14.9874 1 15.362 1.01266 16.5352 1.0662C17.7061 1.1196 18.5057 1.30556 19.2054 1.57751C19.9288 1.85858 20.5422 2.2347 21.1537 2.84623C21.7653 3.45779 22.1414 4.07123 22.4225 4.79454C22.6944 5.49426 22.8804 6.29385 22.9338 7.46471C22.9873 8.63798 23 9.01258 23 12C23 14.9874 22.9873 15.362 22.9338 16.5353C22.8804 17.7061 22.6944 18.5057 22.4225 19.2054C22.1414 19.9288 21.7653 20.5422 21.1537 21.1537C20.5422 21.7653 19.9288 22.1414 19.2054 22.4225C18.5057 22.6944 17.7061 22.8804 16.5352 22.9338C15.362 22.9873 14.9874 23 12 23C9.01258 23 8.63794 22.9873 7.46471 22.9338C6.29385 22.8804 5.49426 22.6944 4.79454 22.4225C4.07123 22.1414 3.45775 21.7653 2.84623 21.1537C2.23466 20.5422 1.85858 19.9287 1.57746 19.2054C1.30552 18.5057 1.1196 17.7061 1.06615 16.5353C1.01262 15.362 1 14.9874 1 12C1 9.01254 1.01262 8.63798 1.06615 7.46471C1.1196 6.29385 1.30552 5.49426 1.57746 4.79454C1.85858 4.07123 2.23466 3.45779 2.84623 2.84623C3.45775 2.2347 4.07123 1.85858 4.79454 1.57751C5.49426 1.30556 6.29385 1.1196 7.46471 1.0662ZM16.4449 3.04608C15.285 2.99316 14.9371 2.98198 12 2.98198C9.06284 2.98198 8.71496 2.99316 7.55501 3.04608C6.48257 3.09503 5.90008 3.27423 5.51247 3.42487C4.99906 3.62442 4.63259 3.86278 4.24768 4.24773C3.86278 4.63263 3.62437 4.99906 3.42482 5.51252C3.27423 5.90013 3.09503 6.48257 3.04608 7.55506C2.99316 8.71496 2.98198 9.06288 2.98198 12C2.98198 14.9371 2.99316 15.285 3.04608 16.4449C3.09503 17.5174 3.27423 18.0999 3.42482 18.4875C3.62437 19.0009 3.86278 19.3674 4.24768 19.7523C4.63259 20.1372 4.99906 20.3756 5.51247 20.5751C5.90008 20.7257 6.48257 20.905 7.55506 20.9539C8.71479 21.0068 9.06262 21.018 12 21.018C14.9373 21.018 15.2852 21.0068 16.4449 20.9539C17.5174 20.905 18.0998 20.7257 18.4874 20.5751C19.0009 20.3756 19.3674 20.1372 19.7523 19.7523C20.1372 19.3674 20.3755 19.0009 20.5751 18.4875C20.7257 18.0999 20.9049 17.5174 20.9539 16.4449C21.0068 15.285 21.018 14.9371 21.018 12C21.018 9.06288 21.0068 8.71496 20.9539 7.55506C20.9049 6.48257 20.7257 5.90013 20.5751 5.51252C20.3755 4.99906 20.1372 4.63263 19.7523 4.24768C19.3674 3.86278 19.0009 3.62442 18.4874 3.42487C18.0998 3.27423 17.5174 3.09503 16.4449 3.04608ZM8.33329 12C8.33329 14.025 9.97495 15.6667 12 15.6667C14.025 15.6667 15.6667 14.025 15.6667 12C15.6667 9.97495 14.025 8.33333 12 8.33333C9.97495 8.33333 8.33329 9.97495 8.33329 12ZM6.35131 12C6.35131 8.88032 8.88032 6.35136 12 6.35136C15.1196 6.35136 17.6486 8.88032 17.6486 12C17.6486 15.1197 15.1196 17.6486 12 17.6486C8.88032 17.6486 6.35131 15.1197 6.35131 12ZM17.8718 7.44816C18.6008 7.44816 19.1918 6.8572 19.1918 6.12818C19.1918 5.39915 18.6008 4.8082 17.8718 4.8082C17.1428 4.8082 16.5518 5.39915 16.5518 6.12818C16.5518 6.8572 17.1428 7.44816 17.8718 7.44816Z"/>
+                </svg>
+            </a>
+            <!-- Itch.io -->
+            <a href="https://www.instagram.com/haneul.anar/" target="_blank" rel="noopener" title="itch.io link">
+                <svg class="logo instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="var(--first)">
+                    <path d="M4.172 1.787c-1.396 0.828-4.145 3.984-4.172 4.812v1.375c0 1.735 1.625 3.267 3.099 3.267 1.771 0 3.251-1.469 3.251-3.213 0 1.744 1.421 3.213 3.197 3.213 1.771 0 3.151-1.469 3.151-3.213 0 1.744 1.516 3.213 3.287 3.213h0.032c1.776 0 3.291-1.469 3.291-3.213 0 1.744 1.381 3.213 3.152 3.213s3.197-1.469 3.197-3.213c0 1.744 1.475 3.213 3.245 3.213 1.479 0 3.104-1.532 3.104-3.267v-1.375c-0.032-0.828-2.776-3.984-4.177-4.812-4.339-0.156-7.344-0.183-11.823-0.183-4.484 0.005-10.593 0.073-11.828 0.183zM12.677 10.421c-0.183 0.308-0.385 0.568-0.625 0.797v0.005c-0.672 0.651-1.588 1.057-2.599 1.057-1.016 0-1.932-0.407-2.599-1.063-0.245-0.235-0.428-0.489-0.6-0.787-0.167 0.297-0.4 0.552-0.645 0.787-0.672 0.656-1.588 1.063-2.599 1.063 0 0 0 0-0.005 0-0.12 0-0.245-0.036-0.349-0.073-0.14 1.485-0.203 2.901-0.224 3.937v0.005c-0.005 0.527-0.005 0.953-0.011 1.552 0.032 3.115-0.307 10.089 1.376 11.803 2.604 0.604 7.396 0.88 12.197 0.885h0.005c4.807-0.005 9.593-0.281 12.197-0.885 1.683-1.713 1.344-8.688 1.376-11.803-0.005-0.599-0.005-1.025-0.011-1.552v-0.005c-0.021-1.036-0.079-2.452-0.224-3.937-0.099 0.037-0.229 0.073-0.349 0.073 0 0-0.005 0-0.005 0-1.011 0-1.927-0.407-2.599-1.063h0.005c-0.245-0.235-0.479-0.489-0.645-0.787h-0.005c-0.167 0.297-0.355 0.552-0.595 0.787-0.667 0.656-1.583 1.063-2.599 1.063-1.011 0-1.927-0.407-2.599-1.063-0.24-0.229-0.443-0.495-0.615-0.787l-0.011-0.016c-0.172 0.308-0.38 0.573-0.615 0.803-0.672 0.656-1.588 1.063-2.599 1.063 0 0-0.005 0-0.005 0-0.031 0-0.068 0-0.104-0.005-0.036 0.005-0.073 0.005-0.109 0.005 0 0 0 0-0.005 0-1.011 0-1.927-0.407-2.593-1.063-0.24-0.229-0.443-0.495-0.609-0.787l-0.011-0.016zM10.005 13.875c1.057 0.005 1.995 0 3.161 1.271 0.916-0.093 1.875-0.14 2.833-0.14s1.917 0.047 2.833 0.14c1.167-1.271 2.104-1.271 3.161-1.271h0.005c0.5 0 2.5 0 3.891 3.912l1.495 5.369c1.109 3.995-0.355 4.095-2.177 4.095-2.708-0.1-4.208-2.068-4.208-4.037-1.5 0.251-3.251 0.371-5 0.371s-3.5-0.12-4.995-0.371c0 1.969-1.5 3.937-4.208 4.037-1.828-0.005-3.292-0.1-2.183-4.095l1.495-5.369c1.396-3.912 3.396-3.912 3.896-3.912zM16 16.953c-0.005 0-2.849 2.62-3.364 3.547l1.864-0.073v1.625c0 0.079 0.751 0.047 1.5 0.011 0.749 0.036 1.495 0.068 1.495-0.011v-1.625l1.869 0.073c-0.515-0.927-3.364-3.547-3.364-3.547z"/>
+                </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:anarotgo@yahoo.com" target="_blank" rel="noopener" title="email link">
+                <svg class="logo instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--first)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM7.005 9C7.005 8.45 7.45 8 8 8H16C16.55 8 17 8.45 17 9V15C17 15.55 16.55 16 16 16H8C7.45 16 7 15.55 7 15L7.005 9ZM12 12.5L8.00001 9.99997V15H16V9.99997L12 12.5ZM12 11.5L8.00001 9.00001H16L12 11.5Z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
