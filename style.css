@@ -256,7 +256,7 @@ body > div {
     background-color: rgba(255, 255, 255, 0.25); }
 
 /* Project card adjustments for mobile */
-@media (max-width: 768px) {
+@media (max-width: 1179px) {
     .project-card {
         flex-direction: column; /* Stack elements vertically */
         align-items: stretch; /* Stretch items to fill the width */
