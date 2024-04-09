@@ -31,7 +31,7 @@
     border: 2px solid rgba(255, 255, 255, 1);
     width: 0.2em; }
 h1 {
-    margin: 0.5em; }
+    margin: 0; text-wrap: nowrap;}
 h2 {    /* Section header */
     white-space: nowrap;
     padding: 0.75em; margin: 0; margin-bottom: 0;
@@ -132,6 +132,7 @@ body > div {
     /* Display styles */
     display: flex; flex-direction: column; max-width: 65em; min-width: 10em;
     justify-content: space-evenly; align-items: center;
+    box-sizing: border-box;  gap: 1em;
 
     /* Spacing */
     padding: 1em; margin-bottom: 1em;
@@ -157,8 +158,7 @@ body > div {
 /* Text Box */
 .text-box {
     box-sizing: border-box; width: 100%;
-    margin-top: 1em;
-    padding-inline: 1em;
+    padding: 1em;
     border-style: solid; border-width: 1px;
     border-color: rgba(0, 0, 0, 0); border-radius: 1em;
     transition: all 0.4s ease;
@@ -187,14 +187,28 @@ body > div {
 }
 
 /* HOME SECTION */
+#home-container { 
+    display: flex; flex-direction: row;
+}
 #home-text-box {
-    display: flex; flex-direction: column; align-items: center;
-    margin-bottom: 1em;
-    margin-top: 0; }
+    display: flex; flex-direction: column; align-items: left; justify-content: center;
+}
+.portrait-image {
+    max-width: 40%; height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1em;
+
+    transition: all 0.4s ease;
+}
+.portrait-image:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 3px black;
+    transform: scale(1.01);
+}
 .portrait-container {
     position: relative;
-    width: 100%;
-    padding-top: 100%;  /* Use padding to control aspect ratio; 75% for a 4:3 aspect ratio */
+    width: 100%; padding-top: 100%;
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 1em;
     overflow: hidden;
@@ -202,7 +216,7 @@ body > div {
 .portrait {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     position: absolute;
     top: 0; left: 0;
     object-fit: cover;
@@ -221,6 +235,19 @@ body > div {
     transform: scale(1); }
 .portrait-container:hover .portrait-fg {
     transform: scale(1.075); }
+/* Contact Me Section */
+.logo {
+    fill: var(--first);
+    width: 2em; height: auto;
+    transition: all 0.4s ease; }
+.logo:hover {
+    fill: white;
+    transform: scale(1.1); }
+.logo-container {
+    display: flex; margin-top: 1em; flex-wrap: nowrap;}
+.logo-container > a {
+    margin-inline: 1em; }
+
 
 /* EXPERIENCE SECTION */
 
@@ -228,7 +255,7 @@ body > div {
 /* PROJECTS SECTION */
 .project-card {
     display: flex; flex-direction: row; align-items: center; gap: 1em;
-    margin-top: 1em; padding: 1em;
+    padding: 1em;
     border: 1px solid rgba(0, 0, 0, 0); border-radius: 1em;
     transition: all 0.4s ease; }
 .project-card:hover {
@@ -256,7 +283,13 @@ body > div {
     background-color: rgba(255, 255, 255, 0.25); }
 
 /* Project card adjustments for mobile */
-@media (max-width: 1179px) {
+@media (max-width: 768px) {
+    /* Home Section Mobile */
+    #home-container {
+        flex-direction: column;
+    }
+    
+    /* Projects Section Mobile */
     .project-card {
         flex-direction: column; /* Stack elements vertically */
         align-items: stretch; /* Stretch items to fill the width */
@@ -272,21 +305,4 @@ body > div {
         align-items: center; /* Optional: center-align the project details and tech container */
         text-align: center; /* Optional: center-align the text */
     }
-}
-
-/* Contact Me Section */
-.logo {
-    fill: var(--first); /* Default color */
-    width: 2em; height: auto;
-    transition: all 0.4s ease;
-}
-.logo:hover {
-    fill: white;
-    transform: scale(1.1);
-}
-.logo-container {
-    margin-block: 1em;
-}
-.logo-container > a {
-    margin-inline: 1em;
 }
