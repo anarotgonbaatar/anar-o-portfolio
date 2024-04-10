@@ -1,12 +1,11 @@
-// Handle custom cursor
 document.addEventListener('DOMContentLoaded', function() {
-    const customCursor = document.getElementById('custom-cursor');
+    const customCursor = document.getElementById('custom-cursor');  // Get custom cursor div
     document.body.style.cursor = 'none'; // Hide the default cursor
     const pointerElements = document.querySelectorAll('button, a, svg'); // Target buttons and links as an example
     const textElements = document.querySelectorAll('h1, h2, h3, h4, li, p, span'); // Target paragraph texts
 
+    // Update custom cursor's location based on default cursor
     document.addEventListener('mousemove', function(e) {
-        // Update the position of the custom cursor element
         customCursor.style.left = `${e.clientX}px`;
         customCursor.style.top = `${e.clientY}px`;
     });
@@ -21,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         customCursor.style.display = 'none';
     });
 
+    // Add 'pointer' and 'text' states so custom cursor style can be dynamically modified
     pointerElements.forEach(elem => {
         elem.addEventListener('mouseenter', () => customCursor.classList.add('pointer'));
         elem.addEventListener('mouseleave', () => customCursor.classList.remove('pointer'));
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (targetElement) {
                 // Calculate the position to scroll to
-                const offsetTop = targetElement.offsetTop - 128; // Offset for nav bar
+                const offsetTop = targetElement.offsetTop - 106; // Offset for nav bar
                 window.scrollTo({
                     top: offsetTop, behavior: 'smooth'
                 });

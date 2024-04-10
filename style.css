@@ -289,12 +289,15 @@ body > div {
     /* Hide custom cursor for mobile */
     #custom-cursor { display: none !important; /* Force hiding custom cursor with !important */}
 
+    /* Navigation Bar */
+    .navbar { gap: 0.2em;}
+
     /* Home Section Mobile */
     #home-container {
         flex-direction: column;
     }
     #home-text-box {
-        align-items: center;
+        align-items: center; justify-content: center;
     }
     
     /* Projects Section Mobile */
