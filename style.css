@@ -78,7 +78,7 @@ body > div {
     font-size: 1em;
 
     /* Spacing */
-    padding: 1em;
+    padding: 1em; gap: 1em;
     position: fixed; top: 1em; z-index: 5;
     white-space: nowrap;
 
@@ -102,8 +102,6 @@ body > div {
     text-shadow: 0px 0px 3px black; }
 .navbar h1 {
     margin: 0; }
-.navbar > a {
-    margin-left: 0.5em;  /* Space between buttons */ }
 
 /* Button style */
 .button {
@@ -197,6 +195,7 @@ body > div {
     max-width: 40%; height: auto;
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 1em;
+    filter: brightness(100%);
 
     transition: all 0.4s ease;
 }
@@ -205,6 +204,7 @@ body > div {
     border-radius: 0.5em;
     box-shadow: 0px 0px 3px black;
     transform: scale(1.01);
+    filter: brightness(110%);
 }
 .portrait-container {
     position: relative;
@@ -244,10 +244,7 @@ body > div {
     fill: white;
     transform: scale(1.1); }
 .logo-container {
-    display: flex; margin-top: 1em; flex-wrap: nowrap;}
-.logo-container > a {
-    margin-inline: 1em; }
-
+    display: flex; margin-top: 1em; flex-wrap: nowrap; gap: 1em;}
 
 /* EXPERIENCE SECTION */
 
@@ -282,11 +279,22 @@ body > div {
     font-size: 0.75em;
     background-color: rgba(255, 255, 255, 0.25); }
 
+/* SKILLS SECTION */
+#skill-text-box > .tech-bubble {
+    margin-bottom: 10em;
+}
+
 /* Project card adjustments for mobile */
 @media (max-width: 768px) {
+    /* Hide custom cursor for mobile */
+    #custom-cursor { display: none !important; /* Force hiding custom cursor with !important */}
+
     /* Home Section Mobile */
     #home-container {
         flex-direction: column;
+    }
+    #home-text-box {
+        align-items: center;
     }
     
     /* Projects Section Mobile */
