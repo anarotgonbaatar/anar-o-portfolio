@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     const customCursor = document.getElementById('custom-cursor');  // Get custom cursor div
     document.body.style.cursor = 'none'; // Hide the default cursor
     const pointerElements = document.querySelectorAll('button, a, svg'); // Target buttons and links as an example
@@ -31,25 +32,22 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     // Handle navigation bar buttons:
-    document.querySelectorAll('.button').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default behavior
-            const targetId = e.target.getAttribute('data-target');
-            const targetElement = document.getElementById(targetId);
+    const navButtons = document.querySelectorAll('.nav-btn');
 
-            if (targetElement) {
-                // Calculate the position to scroll to
-                const offsetTop = targetElement.offsetTop - 106; // Offset for nav bar
-                window.scrollTo({
-                    top: offsetTop, behavior: 'smooth'
-                });
+    navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-target');
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
-        })
-    })
+        });
+    });
 
     // Play project cover videos when hovered
     document.querySelectorAll('.project-card').forEach(card => {
-        const video = card.querySelector('.image-cover');
+        const video = card.querySelector('.image');
         card.addEventListener('mouseenter', () => {
             video.play();
         });
@@ -57,4 +55,20 @@ document.addEventListener('DOMContentLoaded', function() {
             video.pause();
         });
     });
+
+    const themeButton = document.getElementById('theme-btn');
+
+    themeButton.addEventListener('click', () => {
+        const body = document.body;
+
+        // Toggle the 'data-theme' attribute
+        if (body.getAttribute('data-theme') === 'dark') {
+            body.setAttribute('data-theme', 'light');
+            themeButton.textContent = 'DARK MODE 🌙'; // Update button text to Dark Mode
+        } else {
+            body.setAttribute('data-theme', 'dark');
+            themeButton.textContent = 'LIGHT MODE ☀️'; // Update button text to Light Mode
+        }
+    });
+
 });
