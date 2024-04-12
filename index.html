@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anar Otgonbaatar Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/global-style.css">
+    <link rel="stylesheet" href="styles/section-style.css">
+    <link rel="stylesheet" href="styles/mobile-style.css">
     <script src="main.js" defer></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,19 +37,19 @@
 </head>
 
 <div id="custom-cursor"></div>
+<div id="cursor-highlight"></div>
 
 <body>
 
     <!-- NAVIGATION BAR -->
     <div id="navbar">
-        <span id="title">Anar Otgonbaatar</span>
+        <a class="nav-btn" data-target="about-section" id="title">Anar Otgonbaatar</a>
         <div id="nav-btns">
-            <button class="btn nav-btn" data-target="about-section" type="button">ABOUT</button>
             <button class="btn nav-btn" data-target="skills-section" type="button">SKILLS</button>
             <button class="btn nav-btn" data-target="projects-section" type="button">PROJECTS</button>
             <button class="btn nav-btn" data-target="exp-section" type="button">EXPERIENCE</button>
             <button class="btn nav-btn" data-target="contact-section" type="button">CONTACT</button>
-            <button class="btn" id="theme-btn" type="button">DARK MODE 🌙</button>
+            <button class="btn" id="theme-btn" type="button">🌙</button>
         </div>
     </div>
 

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const customCursor = document.getElementById('custom-cursor');  // Get custom cursor div
+    const cursorHighlight = document.getElementById('cursor-highlight');
     document.body.style.cursor = 'none'; // Hide the default cursor
     const pointerElements = document.querySelectorAll('button, a, svg'); // Target buttons and links as an example
     const textElements = document.querySelectorAll('h1, h2, h3, h4, li, p, span'); // Target paragraph texts
@@ -9,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('mousemove', function(e) {
         customCursor.style.left = `${e.clientX}px`;
         customCursor.style.top = `${e.clientY}px`;
+        cursorHighlight.style.left = `${e.clientX}px`;
+        cursorHighlight.style.top = `${e.clientY}px`;
     });
 
     // Show the custom cursor when the mouse enters the webpage
@@ -64,10 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Toggle the 'data-theme' attribute
         if (body.getAttribute('data-theme') === 'dark') {
             body.setAttribute('data-theme', 'light');
-            themeButton.textContent = 'DARK MODE 🌙'; // Update button text to Dark Mode
+            themeButton.textContent = '🌙'; // Update button text to Dark Mode
         } else {
             body.setAttribute('data-theme', 'dark');
-            themeButton.textContent = 'LIGHT MODE ☀️'; // Update button text to Light Mode
+            themeButton.textContent = '☀️'; // Update button text to Light Mode
         }
     });
 

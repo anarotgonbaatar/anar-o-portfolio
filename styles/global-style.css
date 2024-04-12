@@ -1,0 +1,161 @@
+/* Light theme colors */
+:root {
+    --active-color: rgb(235, 235, 235);
+    --active-color-tp: rgba(245, 245, 245, 0.25);
+    --passive-color: rgb(25, 25, 25);
+    --accent-color: rgba(72, 0, 255, 0.9);
+    --text-color: black;
+}
+/* Dark theme colors */
+[data-theme='dark'] {
+    --active-color: rgb(25, 25, 25);
+    --active-color-tp: rgba(25, 25, 25, 0.25);
+    --passive-color: rgb(235, 235, 235);
+    --accent-color: rgba(72, 0, 255, 0.9);
+    --text-color: white
+}
+
+body {
+    display: flex; flex-direction: column;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: var(--passive-color); background-color: var(--active-color);
+
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+}
+
+/* Custom cursor */
+#custom-cursor {
+    pointer-events: none;   /* Ignores clicks */
+    position: fixed;    /* Fixes custom cursor to default cursor */
+    width: 1rem; height: 1rem;
+    border: 2px dotted var(--passive-color);
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255 ,0.1);
+    -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);
+    transform: translate(-50%, -50%);   /* Centers custom cursor around default cursor */
+    z-index: 100;   /* Above everything */
+    /* Left and top delay smoothes movement */
+    transition: all 0.4s, left 0.05s, top 0.05s;
+}
+#custom-cursor.pointer {
+    width: 1.5rem;
+    border: 2px solid rgba(255, 255, 255 ,1);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.5rem;
+    -webkit-backdrop-filter: blur(0); backdrop-filter: blur(0);
+}
+#custom-cursor.text {
+    border: 2px solid rgba(255, 255, 255, 1);
+    width: 0.2rem;
+}
+#cursor-highlight {
+    pointer-events: none;   /* Ignores clicks */
+    position: fixed;    /* Fixes custom cursor to default cursor */
+    width: 5rem; height: 5rem;
+    border-radius: 5rem;
+    box-shadow: 0 0 100px 6rem var(--accent-color);
+    background-color: var(--accent-color);
+    opacity: 1;
+    transform: translate(-50%, -50%);   /* Centers custom cursor around default cursor */
+    z-index: -1;   /* Below everything */
+    /* Left and top delay smoothes movement */
+    transition: all 0.4s, left 0.2s ease-out, top 0.2s ease-out;
+}
+
+/* Section */
+.section {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    min-height: none; box-sizing: border-box;
+    gap: 2rem; padding-block: 6rem;
+    overflow: hidden;
+
+    border-bottom: 1px dashed var(--passive-color);
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);
+}
+.section-title {
+    font-size: 2.5rem; font-weight: 600;
+}
+
+/* Section Details */
+.details {
+    display: flex; flex-direction: row;
+    gap: 1rem;
+}
+
+.container {
+    display: flex; flex-direction: column;
+    justify-content: start; align-items: center;
+    padding: 1rem; gap: 1rem;
+    border: 1px solid var(--passive-color);
+    border-radius: 2rem;
+
+    transition-property: transform, box-shadow, border-style, background-color;
+    transition-duration: 0.4s;
+}
+.container:hover {
+    transform: scale(1.01);
+    background-color: var(--accent-color);
+    color: white;
+    border-style: solid;
+    box-shadow: 0 0 10px var(--passive-color);
+}
+.container-row {
+    display: flex; flex-direction: row;
+}
+
+.title {
+    font-size: 2rem;
+}
+.subtitle {
+    font-size: 1.1rem; font-weight: 500;
+}
+
+/* Buttons */
+.btn {
+    cursor: none;   /* Prevents cursor from appearing on buttons */
+    padding: 1rem;
+    background-color: var(--passive-color);
+    color: var(--accent-color);
+    border: 1px dashed var(--passive-color);
+    border-radius: 0.5rem;
+    font-family: inherit;
+
+    transition-property: transform, background-color, color, box-shadow;
+    transition-duration: 0.4s;
+}
+.btn:hover {
+    transform: scale(1.05);
+    background-color: var(--accent-color);
+    color: var(--active-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+/* Images */
+.image {
+    width: 40%; height: min-content;
+    margin-block: auto;
+    border: 1px solid var(--passive-color);
+    border-radius: 0.5rem;
+}
+
+/* Logos */
+.logo {
+    cursor: none;
+    fill: var(--passive-color);
+    width: 2rem; height: 2rem;
+
+    transition-property: transform, fill;
+    transition-duration: 0.4s;
+}
+.logo:hover {
+    transform: scale(1.1);
+    fill: var(--active-color);
+}
