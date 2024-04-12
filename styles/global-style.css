@@ -140,7 +140,7 @@ body {
 
 /* Images */
 .image {
-    width: 40%; height: min-content;
+    width: 40%;
     margin-block: auto;
     border: 1px solid var(--passive-color);
     border-radius: 0.5rem;

@@ -117,6 +117,7 @@
 
 .project-card {
     display: flex; flex-direction: row;
+    justify-content: center; align-items: center;
     max-width: 35rem;
     padding: 1rem; gap: 1rem;
     border: 1px dashed var(--passive-color);

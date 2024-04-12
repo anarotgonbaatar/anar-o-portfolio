@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Show the custom cursor when the mouse enters the webpage
     document.addEventListener('mouseenter', function() {
         customCursor.style.display = 'block';
+        cursorHighlight.style.display = 'block';
     });
 
     // Hide the custom cursor when the mouse leaves the webpage
     document.addEventListener('mouseleave', function() {
         customCursor.style.display = 'none';
+        cursorHighlight.style.display = 'none';
     });
 
     // Add 'pointer' and 'text' states so custom cursor style can be dynamically modified
