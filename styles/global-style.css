@@ -3,7 +3,7 @@
     --active-color: rgb(235, 235, 235);
     --active-color-tp: rgba(245, 245, 245, 0.25);
     --passive-color: rgb(25, 25, 25);
-    --accent-color: rgba(72, 0, 255, 0.9);
+    --accent-color: rgba(72, 0, 255, 0.85);
     --text-color: black;
 }
 /* Dark theme colors */
@@ -11,7 +11,7 @@
     --active-color: rgb(25, 25, 25);
     --active-color-tp: rgba(25, 25, 25, 0.25);
     --passive-color: rgb(235, 235, 235);
-    --accent-color: rgba(72, 0, 255, 0.9);
+    --accent-color: rgba(72, 0, 255, 0.8);
     --text-color: white
 }
 
@@ -97,7 +97,7 @@ body {
     border: 1px solid var(--passive-color);
     border-radius: 2rem;
 
-    transition-property: transform, box-shadow, border-style, background-color;
+    transition-property: transform, box-shadow, border-style, background-color, color;
     transition-duration: 0.4s;
 }
 .container:hover {
@@ -109,6 +109,7 @@ body {
 }
 .container-row {
     display: flex; flex-direction: row;
+    align-items: center; gap: 0.5rem;
 }
 
 .title {
@@ -158,4 +159,16 @@ body {
 .logo:hover {
     transform: scale(1.1);
     fill: var(--active-color);
+}
+
+.bubbles {
+    display: flex; flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.bubble {
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--active-color-tp);
 }

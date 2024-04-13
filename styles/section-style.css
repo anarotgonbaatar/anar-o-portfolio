@@ -3,7 +3,7 @@
     --active-color: rgb(235, 235, 235);
     --active-color-tp: rgba(245, 245, 245, 0.25);
     --passive-color: rgb(25, 25, 25);
-    --accent-color: rgba(72, 0, 255, 0.9);
+    --accent-color: rgba(72, 0, 255, 0.85);
     --text-color: black;
 }
 /* Dark theme colors */
@@ -11,7 +11,7 @@
     --active-color: rgb(25, 25, 25);
     --active-color-tp: rgba(25, 25, 25, 0.25);
     --passive-color: rgb(235, 235, 235);
-    --accent-color: rgba(72, 0, 255, 0.9);
+    --accent-color: rgba(72, 0, 255, 0.8);
     --text-color: white
 }
 
@@ -33,13 +33,18 @@
 #title {
     font-size: 2rem;
     background-color: transparent;
+    padding-inline: 0.5rem;
+    border: 1px solid none;
     border-radius: 0.5rem;
-    transition-property: background-color, box-shadow;
+    transition-property: background-color, box-shadow, transform, border, color;
     transition-duration: 0.4s;
 }
 #title:hover {
+    transform: scale(1.05);
+    border: 1px dashed var(--passive-color);
     background-color: var(--accent-color);
-    box-shadow: 0 0 5px 5px var(--accent-color);
+    color: var(--active-color);
+    box-shadow: 0 0 5px var(--accent-color);
     
 }
 
@@ -50,17 +55,6 @@
 .nav-btn {
     background-color: var(--active-color-tp);
     color: var(--passive-color);
-}
-
-/* HOME SECTION NOT USED ATM ***************** */
-#home-container {
-    display: flex; flex-direction: column;
-    background-color: var(--passive-color);
-}
-.portrait {
-    max-width: 20rem; height: auto;
-    border: 1px solid var(--passive-color);
-    border-radius: 1rem;
 }
 
 /* ABOUT SECTION */
@@ -94,6 +88,11 @@
     justify-content: center; align-items: center;
     max-width: 30rem;
 }
+.portrait {
+    max-width: 20rem; height: auto;
+    border: 1px solid var(--passive-color);
+    border-radius: 1rem;
+}
 #logos {
     display: flex; flex-direction: row;
     justify-content: center;
@@ -118,12 +117,13 @@
 .project-card {
     display: flex; flex-direction: row;
     justify-content: center; align-items: center;
+    
     max-width: 35rem;
     padding: 1rem; gap: 1rem;
     border: 1px dashed var(--passive-color);
     border-radius: 1rem;
 
-    transition-property: transform, border-style, background-color, box-shadow;
+    transition-property: transform, border-style, background-color, box-shadow, color;
     transition-duration: 0.4s;
 }
 .project-card:hover {
@@ -132,6 +132,20 @@
     background-color: var(--passive-color);
     color: var(--active-color);
     box-shadow: 0 0 5px var(--passive-color);
+}
+.project-title {
+    cursor: none;
+    text-decoration: none; color: inherit;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: 1px solid var(--active-color);
+    border-radius: 0.5rem;
+    transition-property: background-color, transform;
+    transition-duration: 0.4s;
+}
+.project-title:hover {
+    transform: scale(1.2);
+    background-color: var(--accent-color);
 }
 
 /* EXPERIENCE SECTION */
