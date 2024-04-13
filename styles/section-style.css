@@ -166,21 +166,35 @@
 .form-label {
     cursor: inherit;
 }
-
 .form-input {
     cursor: inherit;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.5rem; margin-top: 0.25rem;
     box-sizing: border-box;
     border: 1px solid var(--passive-color);
     border-radius: 0.5rem;
     background-color: var(--active-color-tp);
+    font-family: inherit;
+    transition-property: background-color, border-radius;
+    transition-duration: 0.4s;
+}
+.form-input:hover {
+    background-color: var(--active-color);
+    border-radius: 1rem;
+}
+.form-input:focus {
+    background-color: var(--active-color);
+    outline: none;  /* Disable default highlight effect */
+    border: 1px dashed var(--passive-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--accent-color)
 }
 
 #contact-section textarea {
     height: 100px;
 }
 
+/* FOOTER SECTION */
 #footer-section {
     display: flex; justify-content: center;
     height: auto;
