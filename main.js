@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const cursorHighlight = document.getElementById('cursor-highlight');
     document.body.style.cursor = 'none'; // Hide the default cursor
     const pointerElements = document.querySelectorAll('button, a, svg'); // Target buttons and links as an example
-    const textElements = document.querySelectorAll('h1, h2, h3, h4, li, p, span'); // Target paragraph texts
+    const textElements = document.querySelectorAll('h1, h2, h3, h4, li, p, span, label, input'); // Target paragraph texts
 
     // Update custom cursor's location based on default cursor
     document.addEventListener('mousemove', function(e) {
@@ -76,4 +76,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+});
+
+// Contact me form
+document.querySelector("#contact-section form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    
+    fetch('YOUR_SERVER_ENDPOINT', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Message sent successfully!');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Error sending message!');
+    });
 });
