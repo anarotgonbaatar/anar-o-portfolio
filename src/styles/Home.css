@@ -1,0 +1,14 @@
+#home-section {
+    padding-top: 8rem;
+}
+
+#home-card {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+#portrait {
+    width: 100%;
+    height: auto;
+}

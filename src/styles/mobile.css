@@ -1,0 +1,59 @@
+/* Styles for mobile */
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box !important;
+    }
+
+    
+
+    /* Navbar */
+    #navbar {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    /* Home Section */
+
+
+    /* Skills Section */
+    #skills-section .skills-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    #skill-section .skills-cards-container {
+        width: 100%;
+    }
+    #skill-section .skill-card {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /* Projects Section */
+    #projects-section {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    #projects-section .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subsection {
+        width: 100%;
+    }
+    #projects-section .project-card {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    #projects-section .project-image {
+        width: 40%;
+        height: auto;
+    }
+
+    /* Experience Section */
+    .exp-card {
+        max-width: fit-content;
+    }
+}

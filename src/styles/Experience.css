@@ -1,0 +1,31 @@
+.exp-card {
+    max-width: 38rem;
+    width: 100%;
+
+    align-items: start;
+}
+
+.exp-company {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.exp-title-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.exp-company-container {
+    text-align: left;
+}
+.exp-detail-container {
+    text-align: right;
+}
+.exp-position {
+    font-weight: 500;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
