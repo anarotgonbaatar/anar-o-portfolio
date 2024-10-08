@@ -105,7 +105,10 @@ function Projects() {
                 <div className='projects-container'>
                     
                     <div className='project-card card column'>
-                        <img src={ Loop1 } className='project-image image' alt='project'/>
+                        <video className='project-image image' autoPlay loop muted playsInline>
+                            <source src={ Loop1 } type='video/mp4'/>
+                            Your browser does not support the video tag.
+                        </video>
                         <div className='project-details'>
                             <a className='project-title' href="https://anarotgonbaatar.github.io" target="_blank" rel="noopener noreferrer">
                                 Unsatisfying Loop 1
@@ -123,7 +126,10 @@ function Projects() {
                     </div>
 
                     <div className='project-card card column'>
-                        <img src={ Loop2 } className='project-image image' alt='project'/>
+                        <video className='project-image image' autoPlay loop muted playsInline>
+                            <source src={ Loop2 } type='video/mp4'/>
+                            Your browser does not support the video tag.
+                        </video>
                         <div className='project-details'>
                             <a className='project-title' href="https://anarotgonbaatar.github.io" target="_blank" rel="noopener noreferrer">
                                 Unsatisfying Loop 2
@@ -141,7 +147,10 @@ function Projects() {
                     </div>
 
                     <div className='project-card card column'>
-                        <img src={ Loop3 } className='project-image image' alt='project'/>
+                        <video className='project-image image' autoPlay loop muted playsInline>
+                            <source src={ Loop3 } type='video/mp4'/>
+                            Your browser does not support the video tag.
+                        </video>
                         <div className='project-details'>
                             <a className='project-title' href="https://anarotgonbaatar.github.io" target="_blank" rel="noopener noreferrer">
                                 Unsatisfying Loop 3

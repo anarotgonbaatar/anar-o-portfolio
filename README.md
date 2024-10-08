@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Anar Otgonbaatar - Software Engineer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the repository for my personal portfolio website, showcasing my web development, video game development, and art projects, as well as my skills as a software engineer.
+
+## Tech Stack
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- GitHub Pages for deployment
+
+## Features
+
+- Fully responsive design
+- Dynamic project showcase
+- Contact form integration using Formspree
 
 ## Available Scripts
 

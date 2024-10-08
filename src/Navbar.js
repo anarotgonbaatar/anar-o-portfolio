@@ -4,7 +4,7 @@ import { FaHome } from 'react-icons/fa'
 
 function Navbar() {
     // Scroll to section with an offset:
-    const scrollToSection = ( sectionId, offset = 70 ) => {
+    const scrollToSection = ( sectionId, offset = 55 ) => {
         const section = document.getElementById( sectionId );
         if ( section ) {
             const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
