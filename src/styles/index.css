@@ -4,7 +4,8 @@
     --active-color-tp: rgba(245, 245, 245, 0.25);
     --passive-color: rgb(25, 25, 25);
     --accent-color: rgb(252, 176, 77);
-    --text-color: black;
+    --text-color: rgb(25, 25, 25);
+    --shadow-color: rgb(252, 176, 77);
     --trans: all 0.3s ease-in-out;
 }
 /* Dark theme colors */
@@ -12,8 +13,9 @@
     --active-color: rgb(25, 25, 25);
     --active-color-tp: rgba(25, 25, 25, 0.25);
     --passive-color: rgb(235, 235, 235);
-    --accent-color: rgba(72, 0, 255, 0.8);
-    --text-color: white
+    --accent-color: rgb(204, 85, 0);
+    --shadow-color: rgb(204, 85, 0);
+    --text-color: rgb(235, 235, 235);
 }
 
 html {
@@ -25,8 +27,10 @@ html {
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: var(--text-color);
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
+    transition: var(--trans)
 }
 
 body {
@@ -81,7 +85,7 @@ body {
 .card:hover {
     border: 1px solid var(--accent-color);
     background-color: var(--accent-color);
-    box-shadow: 0 0 0.5rem var(--text-color);
+    box-shadow: 0 0 0.5rem var(--shadow-color);
     transform: scale(1.01);
 }
 .card-title {
@@ -93,11 +97,13 @@ body {
     border: 1px solid var(--text-color);
     border-radius: 0.5rem;
     padding: 0.5rem;
+    background: transparent;
     transition: var(--trans);
 }
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 0.5rem var(--text-color);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0px 0px 0.5rem var(--shadow-color);
     background-color: var(--accent-color);
 }
 

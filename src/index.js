@@ -9,6 +9,7 @@ import Projects from './Projects.js';
 import Experience from './Experience.js';
 import Contact from './Contact.js';
 import Footer from './Footer.js';
+import CustomCursor from './CustomCursor.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,5 +21,6 @@ root.render(
         <Experience />
         <Contact />
         <Footer />
+        <CustomCursor />
     </React.StrictMode>
 );

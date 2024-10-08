@@ -101,8 +101,6 @@ function Experience() {
                     <li>Contributed to the library's operations and community service efforts, enhancing visitor experience.</li>
                 </ul>
             </div>
-
-            <button class="btn" type="button">View All Experiences</button>
         </div>
     )
 }
