@@ -10,7 +10,7 @@ function Experience() {
             <div className='exp-card card column'>
                 <div className='exp-title-container'>
                     <div className='exp-company-container column'>
-                        <a className='exp-company' href='' target="_blank" rel="noopener noreferrer">
+                        <a className='exp-company' href='none' target="_blank" rel="noopener noreferrer">
                             EZ Construction
                         </a>
                         <span className='exp-position'>Contractor Assistant</span>
@@ -30,7 +30,7 @@ function Experience() {
             <div className='exp-card card column'>
                 <div className='exp-title-container'>
                     <div className='exp-company-container column'>
-                        <a className='exp-company' href='' target="_blank" rel="noopener noreferrer">
+                        <a className='exp-company' href='https://www.instagram.com/vgdc_csuf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank" rel="noopener noreferrer">
                             Video Game Development Club at CSUF
                         </a>
                         <span className='exp-position'>Team Leader</span>
@@ -49,7 +49,7 @@ function Experience() {
             <div className='exp-card card column'>
                 <div className='exp-title-container'>
                     <div className='exp-company-container column'>
-                        <a className='exp-company' href='' target="_blank" rel="noopener noreferrer">
+                        <a className='exp-company' href='none' target="_blank" rel="noopener noreferrer">
                             Robotics Club at Fairfax Senior High
                         </a>
                         <span className='exp-position'>Designer, driver, and programmer</span>
@@ -69,7 +69,7 @@ function Experience() {
             <div className='exp-card card column'>
                 <div className='exp-title-container'>
                     <div className='exp-company-container column'>
-                        <a className='exp-company' href='' target="_blank" rel="noopener noreferrer">
+                        <a className='exp-company' href='https://maps.app.goo.gl/XieLn8cGBA9so2vT9' target="_blank" rel="noopener noreferrer">
                             Farm Boy at The Grove
                         </a>
                         <span className='exp-position'>Retail Associate</span>
@@ -87,7 +87,7 @@ function Experience() {
             <div className='exp-card card column'>
                 <div className='exp-title-container'>
                     <div className='exp-company-container column'>
-                        <a className='exp-company' href='' target="_blank" rel="noopener noreferrer">
+                        <a className='exp-company' href='https://www.lapl.org/branches/fairfax' target="_blank" rel="noopener noreferrer">
                             Los Angeles Public Library Fairfax Branch
                         </a>
                         <span className='exp-position'>Volunteer Staff</span>
